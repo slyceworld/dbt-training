@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: store              # як ти будеш звертатись у моделях
+    database: dbt-learn-480217   # GCP Project ID (як у твоїх Credentials)
+    schema: Store            # назва датасету в BigQuery
+    tables:
+      - name: Customers
+      - name: Orders
+      - name: Products
